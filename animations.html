@@ -5,33 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8</title>
     <style>
-    body{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        height:100vh;
-    }
-    @keyframes abcd {
-        from{
-            background-color: coral;
-            border: 1px red solid;
+        div{
+            width: 20vw;
+            height: 20vh;
+            background-color: aqua;
+            position: relative;
+            animation: abcd 5s infinite;
+            animation-delay: 1s;
         }
-        to{
-            background-color: blue;
-            border-radius: 10px;
-                x
+
+        @keyframes abcd {
+            0%{
+                left:0;
+                top: 0;
+                
+            }
+            25%{
+                top: 0;
+                left: 500px;
+            }
+            50%{
+                top: 500px;
+                left: 500px;
+            }
+            75%{
+                top:500px;
+                left:0;
+            }
+            100%{
+                 top: 0;
+                 left: 0;   
+            }
         }
-    }    
-    #boxtoCircle{
-        border: 2px solid red;
-        background-color: lightcoral;
-        height: 50px;
-        width: 10%;
-    }
-    #boxtoCircle:hover{
-        animation: abcd 2s;
-    }
-    
+
     </style>
     
 </head>
