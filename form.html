@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            height: 100vh;
+            width: 100vw;
+            margin-top: 100px;
+        }
+
+        form div{margin: 10px;
+                 
+        }
+        form div label{
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #333;
+            margin: 10px;
+
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+        }
+        form div:first-child span{
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <div>
+                    <span>
+                    <label>
+                        First name:
+                    </label>
+                
+                    <input type="text">
+                </span>
+                <span>
+                    <label>
+                        Last Name:
+                    </label>
+                    <input type="text">
+                </span>
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <span>
+                    <label>
+                        Email:
+                    </label>
+                    <input type="email">
+                </span>
+                <span>
+                    <label>
+                        Password:
+                    </label>
+                    <input type="password">
+                </span>
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <label>
+                        Mobile:
+                    </label>
+                    <input type="number" >
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <label>
+                        Gender:
+                    </label>
+                    <label>
+                        Male
+                    </label>
+                    <input type="radio" name="gen">
+                    <label>
+                        Female
+                    </label>
+                    <input type="radio" name="gen">
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <label >
+                    Date of Birth:
+                    </label>
+                    <input type="date">
+                </div>
+            </tr>
+            <tr>
+                <div>
+                    <label>
+                    Address:
+                    </label>
+                    <input type="text" textarea>
+                </div>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
