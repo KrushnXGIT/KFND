@@ -1,0 +1,143 @@
+<!-- 
+ js is client side
+jquery is advanced than js 
+<script src=""></>
+js has asi automatic semicolon insertion technology
+
+Variable declaration in js
+var,let,const
+var x; re-declaration allowed {depracated}
+let x; re-declaration is not allowed
+const x; re-declaration and re-assigning are not allowed
+
+console is anything where we control software using commands
+
+null vs undefined
+->null means intentionally we say its null
+->undefined, he/she might give value later
+
+object ->
+someName={
+    name:'kRUSHNA'
+    roll:1
+}
+
+null is not object in js but it shows object in typeof
+array is also object [1,2,3]
+fn is also object
+primitive datatypes are mutable
+non-primitive datatypes are immutable
+
+pass by value
+let a=10
+let b=a
+b=20
+
+pass by reference
+let obj1={
+    name:"Gaurav"
+}
+let obj2=obj1
+obj2.name="kRUSHNA"
+console.log(obj1,obj2)
+
+
+==  ->value chck krna
+=== ->value and datatype check (strict checking) 
+!== ->'not equal value **or** type'
+??  -> value hai to print kro varna assign kro
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+
+    <h1 id="i1">Gaurav</h1>
+    <h1>1</h1>
+    <h1>2</h1>
+    <h1>3</h1>
+    <script>
+        // let a = 10;
+        // let n = "Piyush is good Boy";
+        // let c = a + n;
+        // document.write("<h1 style='color:blue;'>Hlo</h1>")
+        // console.log(a + n)
+        // console.log({ c })
+        // console.log(a)
+        // console.log(a * 2 + ' ' + n)
+        // console.log(typeof (a), typeof (n), typeof (c))
+        // 
+        // let obj1 = {
+        //     name: "Gaurav"
+        // }
+        // let obj2 = obj1
+        // console.log(obj2,obj1)
+        // obj2.name = "kRUSHNA"
+        // console.log(obj1, obj2)
+        // let name
+        // console.log(name ?? "Gaurav")//nullish coalesing
+
+
+        // console.log(5 + "5");  //concatenation
+        // console.log("5" - 2);  //type casting happened
+        // console.log("5" * 2);  //type casting happened
+        // console.log(true + 1)  //1+1=2
+        // console.log(false + 1) //0+1=1
+
+        // console.log(10 & 3)
+        // console.log(10 | 3)
+        // let x = Number("20")
+        // console.log(typeof (x))
+        // console.log(Boolean('0')) //outputs true because string **converted** to bool
+        
+        //scope
+
+        // let name = 'GAURAV'
+        // console.log(name) //globe scope
+        // {
+        //     let name="Gaurav"
+        //     console.log(name) //limited scope
+        // }
+        // console.log(name) //globe scope
+
+        // console.log(name) //
+        // name='Gauravqqq' //js will shift this to top of file
+        //this concept is called hoisting
+        //if we write let and const then it will error
+        //this is confusing and there are more conflicts in strict and general mode
+        // for strict mode-> "use strict" 
+        
+
+        // function msg(){
+        //     console.log("GoodMorning")
+        // }
+        // msg()
+
+        //dom
+
+        // x=document.getElementById('i1').innerText
+        // console.log(x)
+        
+        let x = document.getElementsByTagName('h1')
+        
+        console.log(x[1].innerText)
+        x[1].innerText="Jay"
+        console.log(x[1].innerText)
+        
+        
+
+
+    </script>
+</body>
+
+</html>
