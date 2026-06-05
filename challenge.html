@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .culer {
+            color: gray;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        /* .alignn{
+            align-items: left;
+
+        } */
+        .class1 {
+            display: flex;
+            justify-content: center;
+            height: 60vh;
+            align-items: center;
+            font-size: 75px;
+            color: white;
+        }
+
+        .class2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 46px;
+        }
+        .man{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-black ">
+        <div class="container-fluid">
+            <div id="logo">
+                <svg color=grey width="20" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                    class="size-4" fill="currentColor" stroke="currentColor" role="img" aria-label="Logo">
+                    <path
+                        d="M3 248.945C18 248.945 76 236 106 219C136 202 136 202 198 158C276.497 102.293 332 120.945 423 120.945"
+                        stroke-width="90"></path>
+                    <path d="M511 121.5L357.25 210.268L357.25 32.7324L511 121.5Z"></path>
+                    <path
+                        d="M0 249C15 249 73 261.945 103 278.945C133 295.945 133 295.945 195 339.945C273.497 395.652 329 377 420 377"
+                        stroke-width="90"></path>
+                    <path d="M508 376.445L354.25 287.678L354.25 465.213L508 376.445Z"></path>
+                </svg>
+            </div>
+            <a class="navbar-brand culer" href="#">&nbspOpenRouter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search size-4 shrink-0"
+                        aria-hidden="true">
+                        <path d="m21 21-4.34-4.34">
+                        </path>
+                        <circle cx="11" cy="11" r="8">
+                        </circle>
+                    </svg></button>
+            </form>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Fusion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Ranking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <h1 class="my-0 w-full text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold class1">The Unified Interface For LLMs
+    </h1>
+    <p class="text-slate-11 text-base md:pt-2 md:text-xl class2">Better&nbsp <a
+            href="/models?order=pricing-low-to-high">prices</a>,
+        better &nbsp<a href="/docs/features/uptime-optimization">uptime</a>, no subscriptions.</p>
+    
+    <div class="man">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">One API for Any Model</h5>
+                <p class="card-text">
+                    Access all major models through a single, unified interface. OpenAI SDK works out of the box.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                    content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                    content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
+                    content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
