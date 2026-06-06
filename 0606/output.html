@@ -9,37 +9,19 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body onscroll="fun()">
-   <h1>1</h1>
-   <h1>2</h1>
-   <h1>3</h1>
-   <h1>4</h1>
-   <h1>5</h1>
-   <h1>1</h1>
-   <h1>2</h1>
-   <h1>3</h1>
-   <h1>4</h1>
-   <h1>5</h1>
-   <h1>1</h1>
-   <h1>2</h1>
-   <h1>3</h1>
-   <h1>4</h1>
-   <h1>5</h1>
-   <h1>1</h1>
-   <h1>2</h1>
-   <h1>3</h1>
-   <h1>4</h1>
-   <h1>5</h1><h1>1</h1>
-   <h1>2</h1>
-   <h1>3</h1>
-   <h1>4</h1>
-   <h1>5</h1>
+<body>
+    <h1>1</h1>
+    <h1 class="c1">2</h1>
+    <h1 class="c1">3</h1>
     <script>
-        function fun(){
-            alert("Hello")
-        }
-        let x = new Date()
-        document.write(x)
+      let x = document.querySelector("h1")
+      console.log(x.innerText)  
+      let y = document.querySelectorAll(".c1")[1]
+      console.log(y.innerText)
+      let Z = document.querySelectorAll("h1[class]")
+      for(let i=0;i<Z.length;i++){
+        alert(Z[i].innerText)
+      }
     </script>
 </body>
 
