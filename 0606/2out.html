@@ -7,21 +7,31 @@
 </head>
 <body>
     
-    <h1 id="i1">Coders</h1>
+    <h1 id="i1">1</h1>
+    <h1 class="c1" >2</h1>
+    <h1 class="c2" >3</h1>
+    <h1 class="c2" >4<p>
+        Hello World
+    </p></h1>
+    
+    <h1 class="c2" >5</h1>
 
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script>
-
         $().ready(()=>{
+            // $(".c1,.c2").css("color","red")
+            // $("h1:odd").css("color","blue")
+            $("h1:last-child").css("color","green")
+            $("h1:first-of-type").css("color","green")
+            $("h1:nth-child(2n)").css("color","green")
+            $("h1:nth-last-child(7)").css("color","red")
+            // $("h1:nth-last-of-type(2)").css("color","white")
+            // $().css("color","white")
+            $("h1>p").css("color","red")
+            
 
 
-            $("#i1").css({   //used curly here
-                "color":"red", //used comma 
-                "border":"2px solid blue",
-                "background-color":"blue"
-            })
         });
-
 
     </script>
 </body>
