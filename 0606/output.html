@@ -10,45 +10,16 @@
 </head>
 
 <body>
-
-    <table id="i1">
-
-    </table>
+    <form action="#">
+    <input id="i1" type="text">
+    <button type="submit" onclick="fun()"> Click Me</button>
+</form>
     <script>
-        // (function msg() {
-        //     console.log("fg")
-        // })()
-        // function f(){
-        //     console.log("hello")
-        //     return
-        //     console.log("j")
-        // }
-        // f()
-
-        // function add(a,b){
-        //     return a+b
-        // }
-
-        // console.log(add(3,2))
-
-        // let add=(a,b)=>{
-        //     return a+b
-        // }
-
-        // let add=(a,b)=>a+b
-        // console.log(add(2,3))
-
-        function msg(x) {
-            console.log(x+5)
+        function fun(){
+            let x = document.getElementById("i1").value
+            console.log(x)
         }
 
-        function fun(k) {
-            msg(k)
-        }
-
-        fun("raj")
-
-        
     </script>
 </body>
 
