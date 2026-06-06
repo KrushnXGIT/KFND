@@ -14,10 +14,13 @@
     <input onkeypress="fun(event)">
     <script>
     function fun(event){
-        // event.preventDefault()
-        // // alert("hello")
-        // box.textContent = "dOUBLR CLICK DETECTED"
-        console.log(event['key'])
+        let x=event['key']
+        console.log(String.fromCharCode()
+        if(event['key'] >=0 && event['key']<=9){
+            console.log("N")
+        }else{
+            console.log("C")
+        }
     }
     </script>
 </body>
