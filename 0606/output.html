@@ -9,18 +9,22 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1>1</h1>
-    <h1 class="c1">2</h1>
-    <h1 class="c1">3</h1>
+<body onresize="fun()">
+    <h1 oncopy="fun2(event)">copy</h1>
+    <h1 oncut="fun2(event)">cut</h1>
+    <h1 ondrag="fun2(event)">drag</h1>
+    <h1 onpaste="fun2(event)">paste</h1>
+    <h1 ondrop="fun2(event)">drop</h1>
+
+    <h1 draggable="true">skfnsdk </h1>
+
     <script>
-      let x = document.querySelector("h1")
-      console.log(x.innerText)  
-      let y = document.querySelectorAll(".c1")[1]
-      console.log(y.innerText)
-      let Z = document.querySelectorAll("h1[class]")
-      for(let i=0;i<Z.length;i++){
-        alert(Z[i].innerText)
+      function fun(event){
+        event.preventDefault();
+        alert("Logout")
+      }
+      function fun2(){
+        alert("Copied")
       }
     </script>
 </body>
