@@ -8,15 +8,15 @@ a ? x : y
 
 
 switch(){
-    case X:{
-        break;
-    }
-    case Y:{
-        break;
-    }
-    default:{
+case X:{
+break;
+}
+case Y:{
+break;
+}
+default:{
 
-    }
+}
 }
 
 
@@ -34,44 +34,65 @@ console.log(parseInt(a)+parseInt(b));
 
 
 let i
-for(i=0;i<n;i++){
-
-}
-
-function fun(a,b){
-    console.log(a+b)
-}
-
-fun(5,4)
-
-
-let m = function msg(){
-    console.log("Hello");
-}
-m()
-
-
-<h1 id="i1">
+for(i=0;i<n;i++){ } function fun(a,b){ console.log(a+b) } fun(5,4) let m=function msg(){ console.log("Hello"); } m() <h1
+    id="i1">
     Gm Students
-</h1>
-<script>
+    </h1>
+    <script>
 
-    // function fun(){
-    //     document.getElementById("i1").innerText="Campus CRed"
-    // }
+        // function fun(){
+        //     document.getElementById("i1").innerText="Campus CRed"
+        // }
 
-    // setTimeout(fun,5000);//5sec
+        // setTimeout(fun,5000);//5sec
 
-    setTimeout(fucntion(){
-        document.getElementById("i1").innerText="Campus Credentials"
-    },5000)
+        setTimeout(fucntion(){
+            document.getElementById("i1").innerText = "Campus Credentials"
+        }, 5000)
 
-    setTimeout(()=>{
-        document.getElementById("i1").innerText="Campus Credentials"
-    },5000)
+        setTimeout(() => {
+            document.getElementById("i1").innerText = "Campus Credentials"
+        }, 5000)
 
-    
-</script>
+
+    </script>
+
+
+    (function msg() {
+        console.log("fg")   
+    })()
+    function f(){
+        console.log("hello")
+        return
+        console.log("cfb")
+    }
+    f()
+
+    function add(a,b){
+        return a+b
+    }
+
+    console.log(add(3,2))
+
+    let add=(a,b)=>{
+        return a+b
+    }
+
+    let add=(a,b)=>a+b
+
+//callback function
+function msg(x){
+    console.log(x)
+}
+
+function fun(k){
+    msg(k)
+}
+
+fun("raj")
+
+
+
 
 
 
