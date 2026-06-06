@@ -16,16 +16,22 @@
     <div id="d1">
         hii
     </div>
-
+<div id="d1">
+        hii
+    </div><div id="d1">
+        hii
+    </div><div id="d1">
+        hii
+    </div>
 
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script>
-        $().ready(()=>{
-            $("#d1").click(()=>{
-                alert("CLICK")
+        $("div").ready(function(){   //arrow fn not work for 'this' keyword
+            $("div").mouseenter(function(){
+                $(this).css({"background-color":"blue","color":"red"})
             })
-            $("#d1").mouseenter(()=>{
-                // alert("mOUSE ENTERED")
+            $("div").mouseleave(function(){
+                $(this).css({"background-color":"white","color":"black"})
             })
         });
 
