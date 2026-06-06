@@ -4,33 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <STYle>
+        #i1{
+            border: 1px solid red ;
+        }
+    </STYle>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     
-    <h1 id="i1">1</h1>
-    <h1 class="c1" >2</h1>
-    <h1 class="c2" >3</h1>
-    <h1 class="c2" >4<p>
-        Hello World
-    </p></h1>
-    
-    <h1 class="c2" >5</h1>
+    <div id="d1">
+        hii
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script>
         $().ready(()=>{
-            // $(".c1,.c2").css("color","red")
-            // $("h1:odd").css("color","blue")
-            $("h1:last-child").css("color","green")
-            $("h1:first-of-type").css("color","green")
-            $("h1:nth-child(2n)").css("color","green")
-            $("h1:nth-last-child(7)").css("color","red")
-            // $("h1:nth-last-of-type(2)").css("color","white")
-            // $().css("color","white")
-            $("h1>p").css("color","red")
-            
-
-
+            $("#d1").click(()=>{
+                alert("CLICK")
+            })
+            $("#d1").mouseenter(()=>{
+                // alert("mOUSE ENTERED")
+            })
         });
 
     </script>
