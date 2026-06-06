@@ -10,13 +10,15 @@
 </head>
 
 <body>
-    <a onclick="fun(event)" href="google.com">Click ME</a>
-</form>
+
+    <input onkeypress="fun(event)">
     <script>
-       function fun(event){
-        event.preventDefault()
-        console.log("CLICK")
-       }
+    function fun(event){
+        // event.preventDefault()
+        // // alert("hello")
+        // box.textContent = "dOUBLR CLICK DETECTED"
+        console.log(event['key'])
+    }
     </script>
 </body>
 
