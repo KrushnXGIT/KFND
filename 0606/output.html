@@ -9,19 +9,11 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <input id="i1" onkeypress="fun(event)" type="text">
-
+<body onload="fun()">
+   
     <script>
-        function fun(event){
-            let d = document.getElementById("i1").value
-        console.log(d.length)  
-        let s=d.substring(0,d.length-1)
-        if(event['key'] >= '0' && event['key']<=9){
-            document.getElementById("i1").value=s
-        }else{
-            document.getElementById("i1")
-        }
+        function fun(){
+            alert("hEllo")
         }
     
     </script>
