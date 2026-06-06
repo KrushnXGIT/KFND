@@ -10,16 +10,13 @@
 </head>
 
 <body>
-    <form action="#">
-    <input id="i1" type="text">
-    <button type="submit" onclick="fun()"> Click Me</button>
+    <a onclick="fun(event)" href="google.com">Click ME</a>
 </form>
     <script>
-        function fun(){
-            let x = document.getElementById("i1").value
-            console.log(x)
-        }
-
+       function fun(event){
+        event.preventDefault()
+        console.log("CLICK")
+       }
     </script>
 </body>
 
