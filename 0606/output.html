@@ -10,18 +10,20 @@
 </head>
 
 <body>
+    <input id="i1" onkeypress="fun(event)" type="text">
 
-    <input onkeypress="fun(event)">
     <script>
-    function fun(event){
-        let x=event['key']
-        console.log(String.fromCharCode()
-        if(event['key'] >=0 && event['key']<=9){
-            console.log("N")
+        function fun(event){
+            let d = document.getElementById("i1").value
+        console.log(d.length)  
+        let s=d.substring(0,d.length-1)
+        if(event['key'] >= '0' && event['key']<=9){
+            document.getElementById("i1").value=s
         }else{
-            console.log("C")
+            document.getElementById("i1")
         }
-    }
+        }
+    
     </script>
 </body>
 
